@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4AFE74;
+}
+
+
+
+.container {
+    margin:auto;
+    background-color: #43EA6A;
+    margin-top: 10vh;
+    min-width:fit-content;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.container:hover {
+    opacity: 1;
+}
+
+.title {
+    margin: 10px 0 0 10px;
+    font-size: 1rem;
+    color: #FD8CDF;
+}
+
