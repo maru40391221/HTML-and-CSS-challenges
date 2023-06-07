@@ -18,7 +18,7 @@ body{
     width: 60vw;
     height: 80vh;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
     opacity: 0;
     transition: opacity 1.5s;
 }
@@ -33,3 +33,46 @@ body{
     color: #FD8CDF;
 }
 
+.move-heading {
+    animation: moveAndResize 2s forwards;
+  }
+  
+  @keyframes moveAndResize {
+    from {
+      transform: translate(50%, 50%);
+      font-size: 40px;
+    }
+    to {
+      transform: translate(0, 0);
+      font-size: 24px;
+    }
+  }
+
+.linkContainer{   
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: background-image 0.3s ease-in-out;
+    background-image: url("images/Horse-riding.gif");
+    background-size: cover;
+
+
+}
+
+a{
+    font-size: 1rem;
+    color: #FD8CDF;
+    align-content: center;
+    text-decoration: none;
+    margin-left:10px;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+a:hover{
+    color: #fb52ce;
+    
+}
