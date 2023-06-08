@@ -12,7 +12,7 @@ body{
 
 .container {
     margin:auto;
-    background-color: #43EA6A;
+    background-color: #15d241;
     margin-top: 10vh;
     min-width:fit-content;
     width: 60vw;
@@ -54,9 +54,9 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    transition: background-image 0.3s ease-in-out;
-    background-image: url("images/Horse-riding.gif");
-    background-size: cover;
+    /* transition: background-image 0.3s ease-in-out; */
+    /* background-image: url("images/Horse-riding.gif");
+    background-size: cover; */
 
 
 }
@@ -74,5 +74,6 @@ a{
 
 a:hover{
     color: #fb52ce;
+    
     
 }
