@@ -1,1 +1,42 @@
 HTML and CSS ONLY!!!!
+
+stuff that I learned 
+
+**************************************************before 6/12/2023**************************************************
+emerging box animation
+.container {
+    margin:auto;
+    background-color: #15d241;
+    margin-top: 10vh;
+    min-width:fit-content;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.container:hover {
+    opacity: 1;
+}
+
+**************************************************6/12/2023**************************************************
+
+1. slide-show like animation
+ex)
+@keyframes changeColor {
+    0%{background-color: rgb(0, 8, 255);}
+
+    30%{background-color: rgb(0, 242, 255);}
+
+    60%{background-color: rgb(0, 255, 30);}
+
+    80%{background-color: rgb(255, 140, 0);}
+
+    100%{background-color: rgb(0, 8, 255);}
+}
+
+animation: changeColor 7s linear infinite;
+
+2. learned about the differnce between transition and animation in more details
