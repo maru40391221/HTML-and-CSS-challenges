@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Define the outer container that will hold the flipping paper */
+  .paper-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+  }
+  
+  /* Define the paper itself */
+  .paper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  /* Define the front and back of the paper */
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background: #f00; /* Front color */
+  }
+  
+  .back {
+    background: #0f0; /* Back color */
+    transform: rotateY(180deg);
+  }
+  
+  /* Define the flip state */
+  .container:hover .paper {
+    transform: rotateY(180deg);
+  }
